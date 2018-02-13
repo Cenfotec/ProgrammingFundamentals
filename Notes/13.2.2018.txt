@@ -1,0 +1,17 @@
++------------+
+| Encabezado |
++------------+
+
+/**
+ * Nombre del Programa: Calcular la cantidad de dinero
+ *                      a partir de un interes.
+ *
+ * Descripcion: Calcular cuánto dinero tiene una persona después de N años, dado i como
+ *              tasa de interés y p como el monto inicial. (valor = p*(1+i)N).
+ *
+ * Fecha de Creacion: 13/2/2018
+ * Autor: Pablo Bonilla G.
+ *
+ * Fecha de Modificacion: 13/2/2018
+ * Modificado Por: Pablo Bonilla G.
+ */
