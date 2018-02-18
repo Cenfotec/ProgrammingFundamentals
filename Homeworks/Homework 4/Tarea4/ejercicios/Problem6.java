@@ -1,7 +1,3 @@
-/**
- * Author: Pablo Bonilla G.
- */
-
 package ejercicios;
 
 import java.io.BufferedReader;
