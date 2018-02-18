@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 
-public class Problema1 {
+public class Problem1 {
 
     public static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     public static final PrintStream out = System.out;

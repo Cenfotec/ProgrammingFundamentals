@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.util.Arrays;
 
-public class Problema3 {
+public class Problem3 {
 
     public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     public static PrintStream out = System.out;
