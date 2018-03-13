@@ -1,0 +1,6 @@
++-------------------+
+| Copia de Valores  |
++-------------------+
+
+- Cuando se pasan variables a funciones o procedimientos, se crea una copia del valor original. 
+  Pero cuando se pasa por parametro un arreglo, si se pasa el objeto original y es sensible a cambios.
