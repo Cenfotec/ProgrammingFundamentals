@@ -11,7 +11,7 @@
  * Modificado Por: Pablo Bonilla G.
  */
 
-package org.bonilla.bingo;
+package org.pabcam.bingo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -139,7 +139,7 @@ public class UIBingo {
         else if (opcion.equals("3")) {
             if (!Rutinas.bingoStatus) { // Opción para iniciar el juego
                 if (!Rutinas.cartonGen) {
-                    out.println("[!] Genere los cartones primero! (1)\n");
+                    out.println("[!] Genere los cartones primero!(1)\n");
                 } else if (Rutinas.opcionJuego == 0) {
                     out.println("[!] Seleccione una opción de juego! (2)\n");
                 } else {
@@ -188,7 +188,8 @@ public class UIBingo {
         String fila = "";
         String separador = "";
         for (int i = 0; i < 5; i++) {
-            separador = (i == 0) ? "  B    I    N    G    O   \n+------------------------+" : "+----+----+----+----+----+";
+            separador = (i == 0) ? "  B    I    N    G    O   \n"
+                    + "+------------------------+" : "+----+----+----+----+----+";
             out.println(separador);
             for (int j = 0; j < 4; j++) {
                 fila += "| " + carton[i][j];

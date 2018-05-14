@@ -1,4 +1,4 @@
-package org.bonilla.bingo;
+package org.pabcam.bingo;
 
 public class Rutinas {
     private static String cartones[][][] = new String[2][5][5]; // Declaración de la matriz para almacenar los dos cartones
@@ -30,7 +30,7 @@ public class Rutinas {
 
 
         for (int i = 0; i < 2; i++) {
-            int numGenIndice = 0;
+            int numGenIndice;// = 0;
             int randMax, randMin;
             for (int j = 0; j < 5; j++) {
                 for (int k = 0; k < 5; k++) {
@@ -144,9 +144,9 @@ public class Rutinas {
         int numSacar = 0;
         do {
             boolean estaAdentro = false;
-            numSacar = (int) (Math.random() * 75) + 1;
-            for (int i = 0; i < numSacados.length; i++) {
-                if (String.valueOf(numSacar).equals(numSacados[i])) {
+            numSacar = (int) (Math.random() * 75) + 1; // Número aleatorio
+            for (int i = 0; i < numSacados.length; i++) { // Iteramos por la lista de números ya jugados
+                if (String.valueOf(numSacar).equals(numSacados[i])) { // Verificamos si ya había salido
                     estaAdentro = true;
                 }
             }
@@ -154,6 +154,7 @@ public class Rutinas {
                 yaExiste = false;
             }
         } while (yaExiste);
+        // Agregamos el número jugado a la lista de números ya jugados.
         numSacados[cantNumSacados] = String.valueOf(numSacar);
         cantNumSacados++;
 
@@ -162,6 +163,7 @@ public class Rutinas {
 
         String numCantado = (numSacar <= 9) ? "0"+numSacar : String.valueOf(numSacar);
 
+        // Replazamos el número jugado por una ¨X¨, si coincide con el número del cartón
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 5; j++) {
                 for (int k = 0; k < 5; k++) {
